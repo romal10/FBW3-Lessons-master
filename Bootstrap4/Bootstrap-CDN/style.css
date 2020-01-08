@@ -1,0 +1,18 @@
+@media screen and (max-width: 575px) and (min-width: 576px) {
+  .div-responsive {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .div-responsive {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .div-responsive {
+    width: 25%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

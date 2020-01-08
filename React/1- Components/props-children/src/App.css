@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+.person{
+  border:2px solid grey;
+  margin:5px;
+  width:300px;
+  display:inline-block;
+}
+.person p{
+  color: red;
+  font-size:16px;
+}
+.city{
+  color:lightgreen;
+}
+
+.blue{ 
+  background:lightskyblue;
+  box-shadow:2px #ddd;
+}
+.green{
+  background:limegreen;
+  box-shadow:2px #111;
+}

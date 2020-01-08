@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+  <div class="container">
+        <h1 class="mb-4 text-success"> Fetch Api Example 2</h1>
+        <div class="d-flex">
+                <button class="btn btn-primary  mr-4"  id="btn1"> get Text </button>
+                <button class="btn btn-success mr-4" id="btn2">get JSON</button>
+                <button class="btn btn-warning mr-4" id="btn3">get API</button>
+                <button class="btn btn-danger mr-4" id="btn4">get All Users</button>
+        </div>
+        
+        
+        <form id="addPost" >
+          
+                <div class="form-group mt-4">
+                    <input class="form-control"  type="text" id="title" placeholder="title">
+                </div>
+                <div class="form-group">
+                    <textarea  class="form-control"  id="body" cols="30" rows="10" placeholder="the post body"></textarea>
+                </div>
+                <input class="btn btn-secondary"  type="submit" value="submit">
+        </form>
+            <div id="output"></div>
+
+  </div>
+   
+    <script src="app.js"></script>
+</body>
+</html>

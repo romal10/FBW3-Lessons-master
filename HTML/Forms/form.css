@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url('img/02.jpg');
+    background-size: cover;
+}
+.main{
+    max-width:450px;
+    border-radius:20px;
+    margin:0 auto;
+    background-color: rgba(0,0,0,0.7);
+    padding: 40px;
+    margin-top:100px;
+    color:#fff;
+}
+h2{
+    text-align:center;
+    text-transform: uppercase;
+}
+.row{
+    padding: 10px 5px;
+    
+}
+label{
+    display: inline-block;
+    width:30%;
+    border:0px solid white;
+    font-weight: bold;
+}
+input[type="text"],input[type="email"],input[type="password"]{
+    width:100%;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.1);
+    color:#fff;
+    font-weight: bold;
+    border-radius:5px;
+    border:none;
+    border-bottom:1px dotted #fff;
+     
+}

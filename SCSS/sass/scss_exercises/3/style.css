@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translateX(-100px) ;;
+            transform: translateX(-100px) ;;
+  }
+  15% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  30% {
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+  }
+  50% {
+    -webkit-transform: translateX(900px, 500PX);
+            transform: translateX(900px, 500PX);
+    -webkit-transform: scale(1.9);
+            transform: scale(1.9);
+  }
+  75% {
+    -webkit-transform: translateX(600px, 500px);
+            transform: translateX(600px, 500px);
+  }
+  100% {
+    -webkit-transform: translateX(1px, 1px);
+            transform: translateX(1px, 1px);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes move {
+  0% {
+    -webkit-transform: translateX(-100px) ;;
+            transform: translateX(-100px) ;;
+  }
+  15% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  30% {
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+  }
+  50% {
+    -webkit-transform: translateX(900px, 500PX);
+            transform: translateX(900px, 500PX);
+    -webkit-transform: scale(1.9);
+            transform: scale(1.9);
+  }
+  75% {
+    -webkit-transform: translateX(600px, 500px);
+            transform: translateX(600px, 500px);
+  }
+  100% {
+    -webkit-transform: translateX(1px, 1px);
+            transform: translateX(1px, 1px);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.ball1 {
+  width: 250px;
+  height: 250px;
+  background: red;
+  border-radius: 100%;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.ball2 {
+  width: 225px;
+  height: 225px;
+  background: GREEN;
+  border-radius: 100%;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.ball3 {
+  width: 200px;
+  height: 200px;
+  background: aqua;
+  border-radius: 100%;
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+/*# sourceMappingURL=style.css.map */

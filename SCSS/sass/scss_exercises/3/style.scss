@@ -1,0 +1,31 @@
+@mixin ball($width,$height,$color,$anim-delay)
+{
+    width: $width;
+    height: $height;
+    background:$color;
+    border-radius: 100%;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: $anim-delay;
+    animation-timing-function: ease-in-out;
+    
+}
+@keyframes  move{
+    0%{ transform:translateX(-100px); }
+    15%{transform:translateX(100px);}
+    30%{transform:translateX(150px);}
+    50%{transform:translateX(900px,500PX);transform: scale(1.9);}
+    75%{transform:translateX(600px,500px);}
+    100%{transform:translateX(1px,1px);transform: scale(0.9); transform: rotate(360deg);}
+}
+.ball1{
+    @include ball(250px,250px ,red,400ms );
+    
+}
+.ball2{
+    @include ball(225px,225px ,GREEN,900ms );
+}
+.ball3{
+    @include ball(200px,200px ,aqua,300ms );
+}

@@ -1,0 +1,131 @@
+$maincolor: #444;
+$secondcolor: blue;
+
+$links-color: rgb(230, 220, 220);
+$links-color2: #444;
+
+$mainfont-family: "Libre Franklin", sans-serif;
+$secondfont-family: "Lobster", cursive;
+
+$background1: linear-gradient(
+  top,
+  #1e5799 0%,
+  #2989d8 50%,
+  #207cca 51%,
+  #7db9e8 100%
+); /* FF3.6-15 */
+
+$background2: linear-gradient(
+  top,
+  #febbbb 0%,
+  #fe9090 45%,
+  #ff5c5c 100%
+); /* FF3.6-15 */
+$background1: lightblue;
+$background2: pink;
+
+$font-h1: 2em;
+$font-links: 1.8em;
+$font-text: 1.6em;
+
+$box-shadow: 9px 6px 19px 7px #444;
+
+$text-center: center;
+$text-justify: justify;
+
+@mixin effect {
+  color: green;
+  padding: 10px;
+  border: 2px solid #444;
+  border-radius: 25px;
+  background: white;
+}
+
+body {
+  background: lighten($background1, 20%);
+  font-family: $mainfont-family;
+}
+header {
+  text-align: center;
+  padding: 20px;
+  background: darken($background1, 20%);
+}
+
+nav,
+footer {
+  ul {
+    text-align: $text-center;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+
+      a {
+        text-decoration: none;
+        padding: 16px;
+        font-weight: 700;
+        font-family: $secondfont-family;
+        color: $links-color;
+        font-size: $font-links;
+        transition: all ease-in-out 300ms;
+      }
+      a:hover {
+        font-size: $font-links;
+        color: darken(aqua, 20%);
+        @include effect;
+      }
+    }
+  }
+}
+
+main {
+  .cards {
+    margin-top: 40px;
+    display: flex;
+    text-align: $text-center;
+
+    .card {
+      border: 1px solid #444;
+      border-radius: 25px;
+      flex: 33.3%;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: $box-shadow;
+      p {
+        text-align: $text-center;
+        font-size: $font-text;
+      }
+      p:hover {
+        color: tomato;
+      }
+      button {
+        cursor: pointer;
+        padding: 5px;
+        font-size: $font-links;
+        background: $background2;
+      }
+      h4 {
+        font-size: 1.5em;
+      }
+    }
+  }
+  .portion {
+    display: flex;
+    align-items: $text-center;
+
+    img {
+      width: 20vw;
+    }
+    article {
+      text-align: $text-justify;
+      font-size: $font-text;
+    }
+  }
+}
+aside,
+section {
+  padding-left: 35px;
+  font-size: $font-text;
+  text-align: $text-justify;
+}
+@import "footer";

@@ -1,0 +1,50 @@
+{
+  "records": [
+    {
+      "id": 0,
+      "title": "Samsung Galaxy S10+ Smartphone (16,35 cm/6,4 Zoll, 512 GB Speicherplatz, 12 MP Kamera)",
+      "price": 899.99
+    },
+    {
+      "id": 1,
+      "title": "Huawei Mate20 Smartphone (16,59 cm/6,5 Zoll, 128 GB Speicherplatz, 12 MP Kamera)",
+      "price": 379.99
+    },
+    {
+      "id": 4,
+      "title": "Samsung Phone Blue",
+      "price": "100.00"
+    },
+    {
+      "id": 5,
+      "title": "Apple iPhone XR 6,1\" 64 GB Smartphone (15,5 cm/6,1 Zoll, 64 GB Speicherplatz, 12 MP Kamera, True Tone Display, Fettabweisende Beschichtung)",
+      "price": "699.99"
+    },
+    {
+      "id": 6,
+      "title": "fbw3",
+      "price": "300"
+    },
+    {
+      "id": 7,
+      "title": "fbw3",
+      "price": "300"
+    },
+    {
+      "id": 9,
+      "title": "huawei p20 pro",
+      "price": "300"
+    },
+    {
+      "id": 10,
+      "title": "huawei p10 pro",
+      "price": "200"
+    },
+    {
+      "id": 11,
+      "title": "huawei p11 pro",
+      "price": "200"
+    }
+  ],
+  "count": 11
+}

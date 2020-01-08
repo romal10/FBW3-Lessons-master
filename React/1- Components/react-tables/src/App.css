@@ -1,0 +1,27 @@
+.App {
+  text-align: center; 
+  width: 80%;
+  margin:0 auto;
+}
+
+.tablestyle{
+  margin-top: 20px;
+  text-align: center;
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  width: 100%;
+}
+
+.tablestyle tr:nth-child(even){background-color: #eee;}
+
+.tablestyle tr:hover {background-color: #ddd;}
+
+.theader {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: cadetblue;
+  color: white;
+  border: 1px solid #ddd;
+  padding: 8px;
+}

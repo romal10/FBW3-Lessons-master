@@ -1,0 +1,24 @@
+body{
+    background:#eee;
+}
+a:link{
+    color:red;
+}
+span{
+    color:green;
+    font-size:22px;
+}
+a:hover {
+    color: hotpink;
+    font-weight: bold;
+    font-size:22px;
+  }
+
+ a:visited{
+     color:yellowgreen;
+     font-weight: bold;
+ }
+ a:active{
+color:orange;
+font-size:33px;
+ } 

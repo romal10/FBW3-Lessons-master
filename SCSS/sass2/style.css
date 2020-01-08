@@ -1,0 +1,26 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: red;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+nav li a:visited {
+  color: green;
+}
+
+nav ul {
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */

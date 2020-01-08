@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html Forms</title>
+</head>
+<body>
+    <!-- <div class="main">
+        <form action="process.html">
+            First Name:  
+            <input type="text" name="f-name" id="fname">
+            <br>
+            Last Name: 
+            <input type="text" name="l-name" id="lname">
+            <br>
+            Mobile:   
+            <input type="number" name="mobile" id="mobile">
+            <br>
+            Email:   
+            <input type="email" name="email" >
+            <br>
+            Password:  
+            <input type="password" name="pass"> <br>
+            <br>
+            <input type="submit" value="Send Data">
+            <input type="reset" name="" id="">            
+        </form>
+    </div> -->
+    <div class="container">
+        <h1> Contact Form</h1>
+        <p> please fill the form to send a message </p>
+
+        <form action="" method="POST">
+            <p>
+                <label for="fullname">Name</label>
+                <input required="required" placeholder="enter your name" type="text" name="fullname">
+            </p> 
+            <p>
+                <label for="email">Email Address</label>
+                <input name="email" required="required" placeholder="enter your email" type="email">
+            </p>
+            <p>
+                <label for="date">Date of Birth</label>
+                <input type="date" name="Date" id="">
+            </p>
+            <p>
+                <label for="location">Your Location</label>
+                <select name="location" id="location">
+                    <option value="1">Berlin</option>
+                    <option value="2"  >Hamburg</option>
+                    <option value="3">Düsseldorf</option>
+                    <option value="4" selected="selected" >Köln</option>
+                </select>
+            </p>
+            <p>
+                <div class="radio">
+                    <label for="">Do you have a bike or a car</label>
+                    <input checked="checked" type="checkbox" name="transport" id=""><span>i have a Car </span>
+                    <input type="checkbox" name="transport"><span>i have a Bike</span>
+                </div>
+            </p>
+            <p id="gendor">
+                <label for="gender">Gender</label>
+                <div class="radio">
+                    <input type="radio" name="gender" id="" value="m"> <span> Male</span>
+                    <input type="radio" name="gender" id="" value="f"><span> Female</span>
+                    <input type="radio" name="gender" id="" value="o"><span> Other</span>
+                </div>                
+
+            </p>
+            <p>
+                <label for="message">Message</label>
+                <textarea name="message" rows="10" id="">
+                </textarea>
+            </p>
+            <p>
+                <input type="submit" value="Send">
+            </p>
+        </form>
+    </div>
+    
+</body>
+</html>

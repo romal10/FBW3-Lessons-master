@@ -1,0 +1,21 @@
+.day {
+    background-color: blue;
+    color: white;
+    border: 3px solid black;
+    padding: 20px;
+    text-align: center;
+}
+.grid {
+    display: grid;
+    background-color: darkblue;
+    padding: 10px;
+    grid-template-columns: repeat(7, 1fr);
+}
+.month-prev, .month-next {
+    background-color: blueviolet;
+    color: white;
+}
+.weekdays {
+    background-color: cadetblue;
+    color: white;
+}

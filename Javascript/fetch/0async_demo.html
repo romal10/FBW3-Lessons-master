@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Async Demo</title>
+</head>
+<body>
+
+    <script>
+        // f1();
+        // f2(); // f2 will not wait until f1 finished
+        /// f3(); // f3 will not wait until f3 finished
+
+        function checkUser() {
+            setTimeout(function () {
+                console.log("Checking user...");
+            }, 3000); // 3sec timeout
+        }
+
+        function downloadFile() {
+            setTimeout(function () {
+                console.log("Downloading file...");
+            }, 2000); // 2sec timeout
+        }
+
+        function closeSession() {
+            setTimeout(function () {
+                console.log("Closing the session...");
+            }, 1000); // 1sec timeout
+        }
+
+        function run() {
+            checkUser();
+            downloadFile();
+            closeSession();
+        }
+        
+    </script>
+    
+</body>
+</html>

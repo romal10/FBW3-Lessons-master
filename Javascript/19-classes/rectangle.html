@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rectangle</title>
+</head>
+<body>
+        <p>H: <input type="text" id="height"></p>
+        <p>W: <input type="text" id="width"></p>
+        <p>C: <input type="text" id="color"></p>
+        <p>R: <input type="text" id="radius"></p>
+        <button type="button" onclick="create_rect()">Create</button>
+        <button id="circle">create circle</button>
+    <div id="myrect" class="position:relative;"></div>
+
+
+    <script>
+        function create_rect(){
+            height = document.getElementById("height").value;
+            width = document.getElementById("width").value;
+            color = document.getElementById("color").value; 
+
+            const rect = new Rectangle(height, width, color);
+            rect.create();
+        }
+
+        class Rectangle {
+            constructor(height, width, color) {
+                this.height = height;
+                this.width = width;
+                this.color = color;
+                this.newDiv=document.createElement("div");
+                
+            }
+            create() {
+                let myRect = document.getElementById("myrect");
+                
+                myRect.appendChild(this.newDiv);
+                this.newDiv.style.height = this.height;
+                this.newDiv.style.width = this.width;
+                this.newDiv.style.background = this.color;
+                //
+            }
+        }
+
+
+       
+
+    </script>
+    <script src="circle.js">  </script>
+</body>
+</html>

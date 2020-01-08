@@ -1,0 +1,20 @@
+$my-background:url('./images/hamburg.jpeg');
+$my-color:darkblue;
+
+body{
+    background-repeat:no-repeat;
+    background:$my-background;
+    background-size:cover; 
+    color:$my-color;
+}
+div{
+    text-align: center;
+    h1{
+        font-family: Verdana;
+        color:red;
+       }
+       img{
+           width:400px;
+           height:500px;
+       }
+}

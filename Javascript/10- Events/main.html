@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events</title>
+</head>
+
+<body>
+    <button onclick="sayHi()"> click me</button>
+
+    <div>
+        <button onclick="chBgColor()"> change Background</button>
+        <button onclick="chBg('#ff0000')"> red</button>
+        <button onclick="chBg('green')">green</button>
+        <button onclick="chBg('blue')">blue</button>
+    </div>
+    <div id="logo">
+        <img onmouseover="chImg()" id="logoImg" src="https://picsum.photos/id/666/300/300" alt="">
+        <button onclick="chImg()">change the image</button>
+        <button onclick="startAuto()">change automatic</button>
+        <button onclick="clearInterval(startAuto)"> stop the image</button>
+    </div>
+    <input type="text" id="name" onchange="showValue()" >
+    <p  id="paragraphparagraph" onmouseover="over()" onmouseout="out()">
+         JavaScript engine originally developed by Microsoft for use in its Edge browser. Released source under MIT License in January 2016.[3]
+    </p>
+
+    <script src="main.js"> </script>
+</body>
+
+</html>

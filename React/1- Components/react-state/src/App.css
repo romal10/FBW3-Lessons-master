@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.person{
+  margin : 5px;
+  width: 40%;
+  border: 1px solid #111;
+  display:inline-block;
+  box-shadow:0 2px 2px 0 #222; 
+  background: lemonchiffon;
+
+}

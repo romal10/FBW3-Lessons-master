@@ -1,0 +1,51 @@
+div{
+    background: #ccc;
+}
+/* the first p in the div */
+div > p:first-child{
+    display: none; 
+   
+}
+div:hover p{
+    display:block;   
+
+}
+/* all the p inside the div */
+div > p{
+    background-color: red;
+    color:white;
+    text-align: center;
+}
+div ~ h2{
+    background-color: yellow;
+}
+a :link{
+    color:blue;
+    font-size: 2.1em;    
+}
+a:visited{
+    color:blue;
+}
+a:hover{
+    background-color: brown;
+    color:white;
+    font-size: 2.2em;
+    text-decoration: none;   
+}
+a.myclass:hover{
+    background-color: black;
+    color:white;
+    font-size:2em;
+    
+}
+a.myclass{
+    transition: all 2s;
+}
+a:active{
+    color:green;
+}
+/* the first p child in the body */
+body > p:first-child{
+    background-color:lightblue;
+} 
+ 

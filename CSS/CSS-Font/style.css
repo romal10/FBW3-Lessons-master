@@ -1,0 +1,41 @@
+body{
+    font-size:2em;
+    
+    
+}
+@font-face{
+    src: url(fonts/Caveat/Caveat-Bold.ttf);
+    font-family: my-new-font;
+     
+}
+@font-face{
+    src: url(fonts/Rakkas/Rakkas-Regular.ttf);
+    font-family: ar-font;
+
+}
+.font-italic{
+    font-family: Arial,sans-serif, Helvetica;
+    font-style:italic;
+    font-variant: small-caps
+    
+}
+.font-normal{
+    font-family: Arial,sans-serif, Helvetica;
+    font-style:italic;
+    text-transform: uppercase;
+}
+.my-font{
+
+    font-family: 'Parisienne', cursive;
+}
+.google-font{
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+.ru-font{
+    /* font-family: 'Caveat', cursive;   */
+    font-family: my-new-font;
+}
+.ar-font{
+    /* font-family: 'Rakkas', cursive; */
+    font-family: ar-font;
+}

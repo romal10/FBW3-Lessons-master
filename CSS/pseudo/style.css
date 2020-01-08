@@ -1,0 +1,123 @@
+body{
+    margin:0;
+   
+}
+header{
+    height: 95vh;   
+    background-image:
+    linear-gradient(to right bottom,rgba(126,213,111,0.8),
+    rgba(40,180,133,0.8)),url(hero.jpg);
+}
+
+p::first-letter{
+    color:red;
+    font-size:2em;
+}
+P::first-line{
+    font-size: 1.3em;
+    color:rgb(89, 161, 170);
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.my-btn{
+    text-align: center;
+   
+   
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #fff;
+    transition: all 5s;
+    padding: 15px;
+    border-radius: 45px;
+    color:#777;     
+    animation:move 2s; 
+    position: relative; 
+     
+}
+.btn::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: #fff;
+    border-radius:45px;
+    z-index:-1;
+    transition: all 0.7s;
+}
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.my-btn h1>span:nth-child(1){
+    color:white;
+    display:block;
+    letter-spacing: 0.9em;
+    font-size:1.2em;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-bottom: 35px;
+    animation: moveright 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+
+}
+.my-btn h1>span:nth-child(2){
+    font-size:0.5em;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    color:white;
+    font-weight: 400;
+    margin-bottom: 35px;
+    animation: moveleft 1s;
+    /* animation-name: moveleft;
+    animation-duration: 1s; */
+    animation-delay:0.5s;
+    animation-fill-mode: backwards;
+
+
+}
+
+@keyframes move{
+    from{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to{transform: translateY(0px);
+        opacity: 1;
+    
+    }
+}
+@keyframes moveright{
+    from{transform: translateX(-50px);
+    opacity: 0;
+    }
+    to{transform: translateX(0);
+    opacity: 1;
+    }
+}
+@keyframes moveleft{
+    from{transform: translateX(50px);
+    opacity: 0;
+    }
+    to{transform: translateX(0);
+    opacity: 1;
+    }
+}
+P{
+    position: relative;
+    border: 1px solid;
+    transition: all 2s;
+    margin-top:100px;
+
+}
+
+
+ 
+ 

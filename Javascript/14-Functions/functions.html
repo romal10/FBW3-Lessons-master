@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Functions</title>
+</head>
+
+<body>
+    <script>
+        function dummy() {
+            // do smth
+            alert("Hi there!");
+        }
+
+        function greetUser(name) {
+            // do smth
+            if (typeof (name) != "undefined") {
+                alert("Hi " + name);
+            }
+            else {
+                alert("Please enter your name");
+            }
+        }
+
+        //function declaration
+        function square(number) {
+            return number * number;
+        }
+
+        //using anonymous function
+        var sum = function (number) {
+            return number + 10;
+        }
+
+        function whichDayIsIt(number) {
+            var weekday;
+            //switch goes here: if number is 0 then weekday is "Sunday" etc...
+            switch (number) {
+                case 0:
+                    weekday = "Sunday";
+                    break;
+                case 1:
+                    weekday = "Monday";
+                    break;
+                case 2:
+                    weekday = "Tuesday";
+                    break;
+                case 3:
+                    weekday = "Wednesday";
+                    break;
+                case 4:
+                    weekday = "Thursday";
+                    break;
+                case 5:
+                    weekday = "Friday";
+                    break;
+                case 6:
+                    weekday = "Saturday"
+                    break;
+                default:
+                    alert("Please give a right number...!");
+            }
+            return weekday;
+        }
+
+        /*
+        for (let i = 0; i < 7; i++) {
+            whichDayIsIt(i <---- something goes here)
+        }
+        */
+
+        let car1 = { name: "bmw", country: "Germany" };
+        let car2 = { name: "ford", country: "USA" };
+        let car3 = { name: "fiat", country: "Italy" };
+
+        let cars = [car1, car2, car3];
+
+        // please write a function to parse country depending on name of the car
+        function findCarCountry(name) {
+            let country;
+            //somthing here, for loop, if(cars[i].name == name) { country = cars[i].country}
+            for (let i = 0; i < cars.length; i++) {
+                if (cars[i].name == name) {
+                    country = cars[i].country;
+                }
+            }
+            return country;
+        }
+
+        let newCars = ["bmw", "ford", "ferrari"];
+        function findYourCar(car) {
+            let found = false;
+            for (let i = 0; i < newCars.length; i++) {
+                if (newCars[i] == car) {
+                    found = true;
+                }
+            }
+
+            if (found) {
+                console.log("Found");
+            }
+            else {
+                console.log("Not found");
+            }
+        }
+
+        //for(let k = 0; k<=i;k++){document.write('&nbsp;');}
+
+        function drawTriangle(size) {
+            let char = prompt("Please enter a character...");
+            document.write('<br>');
+            // print triangle of stars form 4 line and 4 columns
+            for (let i = 0; i < size; i++) {
+                for(let k = 0; k<=i;k++){document.write('&nbsp;');} // <-- the magic is here
+                for (let j = i; j < size; j++) {
+                    //document.write( 'i=' + i + ' and j= ' + j );
+                    document.write(char);
+                }
+                document.write('<br>');
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

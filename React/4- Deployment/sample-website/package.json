@@ -1,0 +1,16 @@
+{
+  "name": "website-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "Mansour Tumeh",
+  "license": "ISC",
+  "homepage":"https://Mansour-Tumeh.github.io/website-test",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}

@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+  margin-top:25px;
+}
+.person {
+  margin: 5px;
+  border: 2px solid #bbb;
+  box-shadow: 1px #ddd;
+  width: 40%;
+  display: inline-block;
+  background-color: rgb(150,150,200);
+  border-radius: 10px;
+}
+.vip{
+  background: linen;
+}
+.dark{
+  background:linen;
+  text-align: center;
+  margin:0 auto;
+  padding: 30px;
+  width: 75%;
+  border-radius: 10px;
+
+}

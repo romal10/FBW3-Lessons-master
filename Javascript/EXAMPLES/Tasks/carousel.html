@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            width: 50vw;
+
+            background: rgba(0, 0, 0, 0.7);
+            margin: 5vw auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .right {
+            right: 0;
+        }
+
+        span {
+            width: 10%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.5);
+            position: absolute;
+            top: 0;
+            z-index: 5;
+            font-size: 4vw;
+            color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        span:hover {
+            background: rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
+
+        img {
+            width: 100%;
+            height: 30vw;
+            transition: transform 0.4s ease-in-out;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <span class="left"> &lBarr;</span>
+        <span class="right">&rBarr;</span>
+        <img src="https://picsum.photos/id/793/800/400" alt="">
+        <img src="https://picsum.photos/id/791/800/400" alt="">
+        <img src="https://picsum.photos/id/790/800/400" alt="">
+        <img src="https://picsum.photos/id/789/800/400" alt="">
+        <img src="https://picsum.photos/id/788/800/400" alt="">
+        <img src="https://picsum.photos/id/787/800/400" alt="">
+
+    </div>
+    <script src="caousel.js"></script>
+</body>
+
+</html>

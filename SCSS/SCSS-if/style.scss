@@ -1,0 +1,20 @@
+@mixin text-styler($fsize ){
+    font-size:$fsize;
+    @if $fsize > 2em{
+        color:$color;        
+        text-transform: lowercase;
+        font-weight: bold;        
+    }
+    @if $fsize == 2em{
+        color:blue;
+    }
+    @if $fsize ==3em{
+        color:grey;
+        background-color: lightgray;        
+    }  
+   
+}
+.main{
+    @include text-styler(2.1em );
+   
+}

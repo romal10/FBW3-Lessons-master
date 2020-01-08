@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Error Handling</title>
+</head>
+<body>
+    <script>
+        //let x = document.getElementById("myid").value;
+        //alert("I will' be shown");
+
+        try{
+            // let myvar = 10;
+            // let myvar = 20;
+            // console.log(myvar);
+            let x = document.getElementById("myid").value;
+            console.log(x);
+        } catch (err) {
+            console.error("Something went wrong...");
+            console.error("Error name: " + err.name);
+            console.error("Error message: " + err.message);
+        } finally {
+            alert("I still alive");
+        }
+
+        
+        
+    </script>
+</body>
+</html>

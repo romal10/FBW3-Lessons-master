@@ -1,0 +1,98 @@
+[
+    {
+        "state": "Baden-Württemberg",
+        "capital": "Stuttgart",
+        "population": "10755000",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Baden-W%C3%BCrttemberg.svg/50px-Flag_of_Baden-W%C3%BCrttemberg.svg.png"
+    },
+    {
+        "state": "Bavaria",
+        "capital": "Munich",
+        "population": "12542000",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Flag_of_Bavaria_%28striped%29.svg/50px-Flag_of_Bavaria_%28striped%29.svg.png"
+    },
+    {
+        "state": "Berlin",
+        "capital": "",
+        "population": "3469000",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Flag_of_Berlin.svg/50px-Flag_of_Berlin.svg.png"
+    },
+    {
+        "state": "Brandenburg",
+        "capital": "Potsdam",
+        "population": "2500000",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_Brandenburg.svg/50px-Flag_of_Brandenburg.svg.png"
+    },
+    {
+        "state": "Bremen",
+        "capital": "",
+        "population": "661000",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Flag_of_Bremen.svg/50px-Flag_of_Bremen.svg.png"
+    },
+    {
+        "state": "Hamburg",
+        "capital": "",
+        "population": "1788000",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Flag_of_Hamburg.svg/50px-Flag_of_Hamburg.svg.png"
+    },
+    {
+        "state": "Hesse",
+        "capital": "Wiesbaden",
+        "population": "6066000",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Hesse.svg/50px-Flag_of_Hesse.svg.png"
+    },
+    {
+        "state": "Lower Saxony",
+        "capital": "Hanover",
+        "population": "7914000",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Flag_of_Lower_Saxony.svg/50px-Flag_of_Lower_Saxony.svg.png"
+    },
+    {
+        "state": "Mecklenburg-Vorpommern",
+        "capital": "Schwerin",
+        "population": "1639000",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Mecklenburg-Western_Pomerania.svg/50px-Flag_of_Mecklenburg-Western_Pomerania.svg.png"
+    },
+    {
+        "state": "North Rhine-Westphalia",
+        "capital": "Düsseldorf",
+        "population": "17837000",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_North_Rhine-Westphalia.svg/50px-Flag_of_North_Rhine-Westphalia.svg.png"
+    },
+    {
+        "state": "Rhineland-Palatinate",
+        "capital": "Mainz",
+        "population": "4052803",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Rhineland-Palatinate.svg/50px-Flag_of_Rhineland-Palatinate.svg.png"
+    },
+    {
+        "state": "Saarland",
+        "capital": "Saarbrücken",
+        "population": "1018000",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Saarland.svg/50px-Flag_of_Saarland.svg.png"
+    },
+    {
+        "state": "Saxony-Anhalt",
+        "capital": "Magdeburg",
+        "population": "2331000",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Flag_of_Saxony-Anhalt_%28state%29.svg/50px-Flag_of_Saxony-Anhalt_%28state%29.svg.png"
+    },
+    {
+        "state": "Saxony",
+        "capital": "Dresden",
+        "population": "4143000",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Flag_of_Saxony.svg/50px-Flag_of_Saxony.svg.png"
+    },
+    {
+        "state": "Schleswig-Holstein",
+        "capital": "Kiel",
+        "population": "2833000",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Schleswig-Holstein.svg/50px-Flag_of_Schleswig-Holstein.svg.png"
+    },
+    {
+        "state": "Thuringia",
+        "capital": "Erfurt",
+        "population": "2231000",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flag_of_Thuringia.svg/50px-Flag_of_Thuringia.svg.png"
+    }
+] 

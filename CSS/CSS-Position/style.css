@@ -1,0 +1,56 @@
+.parent{
+    background-color:aquamarine;
+    height: 75vh;
+    width: 75vw;
+    padding:50px;
+    position: relative;
+    z-index:1;
+}
+.child{
+    background-color:red;   
+    /* position: relative;
+    top:100px;
+    left:250px; */
+    position: absolute;
+    top: 0;  
+    left: 0; 
+    bottom:0; 
+    right:0; 
+    z-index:-1;
+    
+}
+.main{
+    position: relative;
+}
+#img1{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:3;
+}
+#img2{
+    position:absolute;
+    top:300px;
+    left:300px;
+    z-index:5;
+}
+#img3{
+    position:absolute;
+    top:500px;
+    left:500px;
+    z-index:2;
+}
+img{
+    transition: ease-in-out 550ms;
+}
+img:hover{
+     
+    transform: translate(200px, 0px);
+}
+#img1:hover{
+    z-index: -1;
+}
+.text{
+    position:absolute;
+    z-index:2;
+}

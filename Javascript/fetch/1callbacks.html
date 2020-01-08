@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Callbacks</title>
+</head>
+<body>
+
+    <script>
+        function checkUser(callback) { // callback input
+            setTimeout(function () {
+                console.log("Checking user...");
+                callback(); // callback call
+            }, 3000);
+        }
+
+        function downloadFile(callback) { // callback input
+            setTimeout(function () {
+                console.log("Downloading file...");
+                callback(); // callback call
+            }, 2000);
+        }
+
+        function closeSession(callback) { // callback input
+            setTimeout(function () {
+                console.log("Closing the session...");
+                callback(); // callback call
+            }, 1000);
+        }
+
+        function run() {
+            checkUser(function() {
+                downloadFile(function() {
+                    closeSession(function() {
+                        //All three functions at this point have completed
+                    });
+                });
+            });
+
+            
+            
+        }
+        
+    </script>
+    
+</body>
+</html>

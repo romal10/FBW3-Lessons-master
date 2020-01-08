@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validator</title>
+</head>
+<body>    
+    <script>
+        // let myInput = prompt('Please write your string here...', 'mytext');
+        let myInput = prompt('Please create your new password here...');
+
+        // alert("Your password was: " + myInput);
+        // alert("Length of your password is: " + myInput.length);
+        if (myInput.length < 8) {
+            myInput = prompt('Your password is too weak. Please try again!');
+        }
+        else {
+            if (myInput.includes("qwerty")) {
+                myInput = prompt('Try again!');
+            }
+            else {
+                alert("Successfully changed! See you!");
+            }
+        }
+
+
+
+
+        //
+    </script>
+</body>
+</html>

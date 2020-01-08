@@ -1,0 +1,73 @@
+@mixin styler
+{
+    text-align: center;
+    font-size:2em;
+    text-transform: uppercase;
+    color:blue;
+}
+.title{
+    
+    @include styler;
+    color: red;   
+    
+}
+.text{
+    @include styler;    
+}
+//////////////////////////////////
+@mixin mystyler($mycolor,$fsize,$align,$radius){
+
+    text-transform: uppercase;
+    color:$mycolor;
+    font-size:$fsize;
+    text-align:$align;
+    border:2px solid #333;
+    border-radius:$radius;
+    @include bgcolor(to right,lightgreen ,rgb(224, 224, 26));
+
+}
+@mixin bgcolor($direction,$color1,$color2){
+
+    background-image: linear-gradient($direction,$color1,$color2);
+}
+
+@mixin super-styler($color,$fsize,$selector){
+    #{$selector} {
+        background-color: $color;
+        font-size:$fsize; 
+        
+        &:hover{
+            background-color: lighten($color,20%);
+        }
+    }
+          
+     
+
+}
+@mixin text-styler($size){
+    font-size:$size;
+    
+     
+}
+.htext{
+    @include mystyler(#333,33px,center,25px);        
+      
+}
+.content{        
+   
+    @include mystyler(red,2em,left,25px);   
+}
+@include super-styler(blue ,2.2em ,".light-text" );
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+

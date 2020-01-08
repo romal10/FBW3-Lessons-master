@@ -1,0 +1,22 @@
+{
+  "name": "coolshadow",
+  "version": "1.0.0",
+  "description": "styling your images with a nice shadow for the non designer people",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mansour-Tumeh/softshadow.git"
+  },
+  "keywords": [
+    "softshadow"
+  ],
+  "author": "Mansour Tumeh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mansour-Tumeh/softshadow/issues"
+  },
+  "homepage": "https://github.com/Mansour-Tumeh/softshadow#readme"
+}

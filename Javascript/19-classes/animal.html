@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animal</title>
+</head>
+<body>
+
+    <script>
+        class Pet {
+            constructor(name, color) {
+                this.name = name;
+                this.color = color;
+            }
+            writeName() { document.write("Pet name is " + this.name); }
+            writeColor() { document.write(`Pets color is ${this.color}`) }
+            getName() { return this.name; }
+            getColor() { return this.color; }
+        }
+
+        const p = new Pet("lolo", "gray");
+
+        class Cat extends Pet {
+            constructor(name, color, age, sound) {
+                super(name, color);
+                this.age = age;
+                this.sound = sound;
+            }
+            writeAge() {
+                document.write(` and it is ${this.age} years old`);
+            } 
+            sounds() {
+                alert(`${this.sound}`);
+            }
+        }
+        const c = new Cat("kiki", "brown", 10, "meowwwwwww");
+
+        class Dog extends Pet {
+            constructor(name, color, owner, address) {
+                super(name, color);
+                this.owner = owner;
+                this.address = address;
+            }
+            whereIAmLiving() {
+                alert(`${this.address}`);
+            }
+            whoIsMyOwner() {
+                alert(`${this.owner}`);
+            }
+        }
+        const d = new Dog("joe", "fox-like", "Sergey", "Hamburg, DCI")
+    </script>
+    
+</body>
+</html>

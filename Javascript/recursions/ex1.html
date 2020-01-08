@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex 1</title>
+</head>
+<body>
+
+    <script>
+        var sum = 0;
+        function sumToRec(n) {
+        if (n >= 0) {
+            sum += n;
+            console.log(sum);
+            return sumToRec(n-1);
+        }
+        return sum;
+        }
+
+        var NMAX = 200;
+        console.time('sumToRec');
+        sumToRec(NMAX);
+        console.timeEnd('sumToRec');
+
+        alert("Proceed back?");
+
+
+        function sumTo(n) {
+        var sum = 0;
+        while (n >= 0) {
+            sum += n;
+            console.log(sum);
+            n--;
+        }
+        }
+
+        console.time('sumTo');
+        sumTo(NMAX);
+        console.timeEnd('sumTo');
+    </script>
+    
+</body>
+</html>

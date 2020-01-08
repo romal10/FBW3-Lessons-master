@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Users</title>
+</head>
+<body>
+
+    <script>
+        class User {
+            constructor(username, ip) {
+                this.username = username;
+                this.ip = ip;
+                this.startTime = new Date();
+            }
+            getActivityTime(){
+                let start = this.startTime.getTime();
+                let now = new Date();
+                now = now.getTime();
+                return (now - start) / 1000;
+            }
+            sayHello() {
+                if(this.isRejected()) {
+                    alert(`You are a bad guy, ${this.username}. See you!`)
+                } else {
+                    alert(`Welcome back ${this.username}!`)
+                }
+                
+            }
+            isRejected() {
+                if(this.ip == "127.2.2.2") {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+        }
+        const u = new User("dci_user", "127.1.1.1");
+        class Admin extends User {
+            constructor(username, ip, category) {
+                super(username, ip);
+                this.category = category;
+            }
+            getCategory() {
+                document.write(`The admin ${this.username} moderates the category ${this.category}`);
+            }
+            blockUser(x) {
+                //
+                alert(`The user ${x} is blocked`);
+            }
+        }
+        const a = new Admin("romal", "127.3.4.5", "Sportcars")
+        class Owner extends Admin {
+            constructor(username, ip, category, ownerSince){
+                super(username, ip, category);
+                this.ownerSince = ownerSince;
+            }
+            getOwnerName() {
+                document.write(`This web page was crated by ${this.username}`);
+            }
+        }
+        const o = new Owner("BillGates", "9.9.9.9", "All", 20);
+    </script>
+    
+</body>
+</html>

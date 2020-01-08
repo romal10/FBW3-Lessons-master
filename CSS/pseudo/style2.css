@@ -1,0 +1,134 @@
+body{
+    background-color: #ccc;    
+}
+h1{
+    color:red;
+}
+.text{
+    padding: 50px;
+    font-size:1.5em;
+}
+h1,h2{
+    text-align: center;
+}
+
+.text::before{
+    content: '';
+    width:100%;
+    height: 20px;
+    color:red;
+    font-weight: 800;
+    display: block;
+    background-color: palevioletred;
+    border-radius:15px;
+}
+
+.text::after{
+    content: 'END';
+    color:red;
+    font-weight: 800;
+    display:block;
+    background-color: palevioletred;
+    width:100%;
+    height: 30px;    
+}
+h2::before{
+    content:open-quote;
+    font-size:2em;
+    color:darkorange;
+
+}
+h2::after{
+    content: close-quote;
+    font-size:2em;
+    color:darkorange;
+}
+.article{
+    padding: 50px;
+    font-size:1.3em;    
+}
+.article a{
+    text-decoration: none;
+    position: relative;
+}
+.article a::before{
+    content: 'info about Lorem Ipsum';
+     position: absolute;
+     bottom: 100%;
+    background-color: grey;
+    color:black;
+    padding: 10px;
+    white-space: nowrap;
+    transform:scale(0);
+    transition: ease-in-out 650ms;
+    border-radius: 15px;
+    opacity: 0.6;        
+}
+
+.article a:hover{
+    color: red;
+}
+.article a:hover::before{
+    color:darkorange;
+    transform: scale(1);
+     
+}
+
+/*  Article 2 */
+
+
+.article2{
+    padding: 50px;
+    font-size:1.3em;    
+}
+.article2 a{
+    text-decoration: none;
+    position: relative;
+}
+.article2 a::before{
+    content: attr(info);
+     position: absolute;
+     bottom: 100%;
+    background-color: grey;
+    color:black;
+    padding: 10px;
+    white-space: nowrap;
+    transform:scale(0);
+    transition: ease-in-out 650ms;
+    border-radius: 15px;
+    opacity: 0.6;        
+}
+
+.article2 a:hover{
+    color: red;
+}
+.article2 a:hover::before{
+    color:darkorange;
+    transform: scale(1);
+     
+}
+.center{
+    text-align: center;
+}
+.btn-hover{
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 1.4em;
+    position: relative;
+}
+.btn-hover:hover{
+    cursor: pointer;
+}
+.btn-hover::after{
+    content: 'info about the Hover button';
+    color:darkblue;
+    position: absolute;
+    left:0;
+    bottom:120%;
+    background-color:lightblue;
+    transform: scale(0);
+    transition: ease-in 200ms; 
+}
+.btn-hover:hover::after{
+    transform: scale(1);   
+}

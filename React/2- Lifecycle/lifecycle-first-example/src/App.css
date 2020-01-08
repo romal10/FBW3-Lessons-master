@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+.wrapper{ 
+  width:60%;
+  margin:30px;
+  border:2px solid #888;
+  border-radius:15px;
+  padding: 20px;
+}
+.list{
+  list-style-type:none; 
+}
+.list li{
+  padding: 10px 20px;
+  background: #b5d1ff;
+  border: 1px solid #6ba1fa;
+  border-radius:5px;
+  font-size:18px;
+  font-weight: bold;
+  margin:2px;
+  cursor: pointer;
+}
+.btn{
+  padding: 10px 20px;
+  background:#faa7ce;
+  margin:10px auto;
+  font-size:20px;
+  display: block;
+  border:none;
+  border-radius: 25px;
+  color : whitesmoke;
+  cursor: pointer
+}

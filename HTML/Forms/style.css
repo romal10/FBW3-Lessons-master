@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    text-align: center;
+    width:70%;
+    margin: 0 auto;
+    background-image:
+    linear-gradient(to  bottom,rgba(174, 36, 179, 0.8),
+    rgba(127, 216, 228, 0.8));
+    
+    padding: 25px;
+}
+.container  label{
+    display:inline-block; 
+    border:0px solid red;
+    width:60%;
+    text-align: left; 
+    font-size:1.3em;          
+}
+.container input[type="text"]{
+    background-color:white;
+    color:darkgoldenrod;
+    font-size:1.7em;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat:  no-repeat;
+    padding-left:45px;
+    transition: all linear 400ms;    
+
+}
+.container input[type="text"]:focus{
+    /* background: greenyellow; */
+    color:black;
+    font-weight: 300;
+    border: 2px solid darkblue;
+    width:60%;    
+}
+ 
+.container textarea{
+   padding: 20px 20px;;
+   resize:none;
+   font-size:1.7em;
+   color:orange;   
+}
+
+.container input:not([type='checkbox']),textarea,select{
+    border-radius:20px;
+    width:60%;
+    box-sizing: border-box;
+    /* padding: 10px;      */
+}
+.container input[type="submit"]{
+    font-size:1.6em;
+    background-color:aqua;
+    padding:10px 20px;
+    color:white;
+    font-weight: bold;
+    border:0;
+    text-transform: uppercase;
+
+}
+.container input[type="submit"]:hover{
+    background: aqua;
+    outline: none;
+    box-shadow: 0 4px #141313;
+     top: 2px;
+     color:gray;
+
+}
+ 
+.container input[type="radio"]{
+    width:10px;
+    height:10px;
+   display: inline-block;    
+   text-align: left;     
+}
+.container input[type='checkbox']{
+    width:10px;
+    height:10px;
+   display: inline-block;    
+   text-align: left;
+
+}
+.radio{
+    border:0px solid red;
+    width:60%;
+    margin:0 auto;
+    text-align: left;
+}
+#gendor label{
+     
+    display: inline-block;    
+    width:60%;
+}
+.container p
+{
+    border:0px solid red;
+} 
+ 
+
+@media only  screen and (max-width:600px){
+    .container input,textarea,p,select {
+        width:100%;
+        padding: 8px;     
+         
+    }
+    .container p label{
+        text-align:left;
+        font-size:0.8em;
+        width:100%;
+        text-transform: uppercase; 
+        font-weight: 200;  
+    }
+    .container p{
+        font-size:1.5em;
+        font-weight: bold;
+        
+    }
+
+}

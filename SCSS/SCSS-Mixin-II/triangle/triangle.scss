@@ -1,0 +1,40 @@
+// .up {
+//     width: 0;
+//     height: 0;
+//     margin: 10px;
+//     border-left: 50px solid transparent;
+//     border-right: 50px solid transparent;
+//     // border-top: 50px solid transparent;
+//     border-bottom: 50px solid black;
+// }
+// .down {
+//     width: 0;
+//     height: 0;
+//     margin: 10px;
+//     border-left: 50px solid transparent;
+//     border-right: 50px solid transparent;
+//     border-top: 50px solid yellow;
+//     // border-bottom: 50px solid transparent;
+// }
+@mixin triangle($color, $direction) {
+  width: 0;
+  height: 0;
+  margin: 10px;
+  @if $direction == "up" {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    // border-top: 50px solid transparent;
+    border-bottom: 50px solid $color;
+  } @else if $direction == "down" {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid $color;
+    // border-bottom: 50px solid transparent;
+  }
+}
+.up {
+    @include triangle(red, "up")
+}
+.down {
+    @include triangle(yellow, "down")
+}

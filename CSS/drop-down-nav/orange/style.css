@@ -1,0 +1,42 @@
+ul {
+    list-style: none;
+    background: darkorange;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+div > ul > li {
+    float: left;
+    padding: 1rem;
+}
+li {
+    background: darkorange;
+    padding: 1rem;
+    transition-duration: 0.5s;
+}
+li a {
+    color: white;
+}
+.dropdown {
+    position: relative;
+}
+.content {
+    position: absolute; 
+    left: 0;
+    margin-top: 1rem;
+    width: 100%;
+    display: none;
+}
+li:hover {
+    background: orange;
+}
+li:hover .content {
+    display: block;
+}
+ul li ul li {
+    background: orange;
+}
+.content li:hover {
+    background: red;
+}

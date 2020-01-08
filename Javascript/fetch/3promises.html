@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Promises</title>
+</head>
+
+<body>
+
+    <script>
+        function checkUser() {
+            // return a promise with resolve and reject functions
+            return new Promise((resolve, reject) => {
+                setTimeout(function () {
+                    console.log("Checking the user ...");
+                    resolve("success checkUser"); // resolve function
+                }, 3000); //3sec timeout
+            })
+        }
+
+        function downloadFile() {
+            // return a promise with resolve and reject functions
+            return new Promise((resolve, reject) => {
+                setTimeout(function () {
+                    console.log("Downloading file..");
+                    resolve("success downloadFile"); // resolve function
+                }, 2000); //2sec timeout
+            })
+        }
+
+        function closeSession() {
+            // return a promise with resolve and reject functions
+            return new Promise((resolve, reject) => {
+                setTimeout(function () {
+                    console.log("Closing the session...");
+                    resolve("success closeSession"); // resolve function
+                }, 1000); //1sec timeout
+            })
+        }
+
+        function run() {
+            const promise = checkUser().then(
+                function () {
+                    return downloadFile();
+                }
+            ).then(
+                function () {
+                    return closeSession();
+                }
+            )
+        }
+
+        function run_with_arrows() {
+            const promise = checkUser().then(
+                () => {
+                    return downloadFile();
+                }
+            ).then(
+                () => {
+                    return closeSession();
+                }
+            )
+        }
+
+        //using Promises without 'then'
+
+        async function async_run() {
+            const promise1 = await checkUser(); 
+            const promise2 = await downloadFile(); //waits for checkUser()
+            const promise3 = await closeSession(); //waits for downloadFile()
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

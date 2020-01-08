@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Date Forms</title>
+</head>
+<body>
+
+    <button onclick="getCurrentDate()">Get Current Date</button>
+    <!-- 12344555467 -->
+    <button onclick="getUnixTime()">Get Unix Time</button>
+    <!-- hh:mm:ss -->
+    <button onclick="getTimeStamp()">Get Only Time</button>
+    <!-- 2019.07.03 -->
+    <button onclick="getOnlyDate()">Get Only Date</button>
+    <!-- Show the watches -->
+    <button onclick="showWatches()" style="background-color: cyan">Show watches</button>
+    <p id="out"></p>
+    <p id="watches"></p>
+
+    <script>
+        function prepareWatches() {
+            let d = new Date()
+            h = d.getHours();
+            m = d.getMinutes();
+            s = d.getSeconds();
+            mil = d.getMilliseconds();
+            watches = h + ":" + m + ":" + s + "." + mil;
+            document.getElementById("watches").innerHTML = watches;
+        }
+        function showWatches() {
+            setInterval(prepareWatches, 1); // 500 milliseconds
+        }
+
+        function getOnlyDate() {
+            let d = new Date();  
+            let y = d.getFullYear();
+            let m = d.getMonth()+1;
+            let day = d.getDay();     
+            document.getElementById("out").innerHTML = y + "." + m + "." + day; 
+        }
+
+        function getTimeStamp() {
+            let d = new Date();
+            h = d.getHours(); // hh 
+            m = d.getMinutes(); // mm
+            s = d.getSeconds(); // ss
+            output = h + ":" + m + ":" + s;
+            document.getElementById("out").innerHTML = output;
+        }
+        function getUnixTime() {
+            let d = new Date();
+            unix_time = d.getTime();
+            document.getElementById("out").innerHTML = unix_time;
+        }
+        function getCurrentDate() {
+            let d = new Date();     
+            document.getElementById("out").innerHTML = d;
+        }
+    </script>
+    
+</body>
+</html>

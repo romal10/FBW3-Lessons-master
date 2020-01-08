@@ -1,0 +1,36 @@
+body{
+  background-color: rgb(200, 200, 200,0.3);
+}
+.App {
+  text-align: center;
+}
+
+.infield{
+  margin: 5px;
+  height: 20px;
+}
+
+.btn{
+  margin: 5px;
+  background-color: royalblue;
+  width: 100px;
+  height: 40px;
+  color:white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  border: 1px solid blanchedalmond;
+  border-radius: 10px;
+}
+
+np
+
+.imageContainer{
+  width: 80%;
+  border: 2px solid #bbb;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}

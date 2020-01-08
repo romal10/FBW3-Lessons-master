@@ -1,0 +1,69 @@
+$color1: blue;
+$color2: purple;
+$color3: green;
+$font-family1:Arial, Helvetica, sans-serif;
+$font-family2:'Times New Roman', Times, serif;
+$size1:2rem;
+$background-color1:rgba(255, 255, 0, 0.39);
+
+html, body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 10rem; 
+    background-color: $background-color1;
+    text-align: center;
+    padding-top: $size1;
+    font-family: $font-family1;
+    h1 {
+        font-family: $font-family1;
+    }
+}
+
+main {
+    margin: .5rem; 
+    .huge {
+        font-family: $font-family2;
+        font-size: 10rem;
+        color: $color1;
+    }
+    .big {
+        font-family: $font-family2;
+        font-size: 8rem;
+        color: $color1;
+    }
+    .medium {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        font-size: 3rem;
+        color: $color2;
+    }
+    .middle {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 3rem;
+        color: $color2;
+    }
+    .small {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: $size1;
+        color: $color3;
+    }
+    .tiny {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: .5rem;
+        color: $color3;
+        margin-bottom: $size1;
+    }
+}
+
+footer {
+    height: 10rem;
+    background-color: $background-color1
+    ;
+    text-align: center;
+    font-family: $font-family1;
+    padding-top: 1rem;
+}

@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.containerClass{
+
+  background: url('./plants.jpg');
+  background-size: cover;
+  height: 100vh;
+
+}

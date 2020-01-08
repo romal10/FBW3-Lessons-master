@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex 2</title>
+</head>
+
+<body>
+
+    <script>
+        var prod = 1;
+        function factRec(n) {
+            // if (n == 0) return 1;
+            if (n >= 1) {
+                prod *= n;
+                console.log(prod);
+                return factRec(n - 1);
+            }
+            return prod;
+        }
+
+        var NMAX = 200;
+        console.time('factRec');
+        console.log(factRec(NMAX));
+        console.timeEnd('factRec');
+
+        alert("Proceed back?");
+
+
+        function fact(n) {
+            var prod = 1;
+            while (n >= 1) {
+                prod *= n;
+                console.log(prod);
+                n--;
+            }
+            return prod;
+        }
+
+        console.time('fact');
+        console.log(fact(NMAX));
+        console.timeEnd('fact');
+    </script>
+
+</body>
+
+</html>

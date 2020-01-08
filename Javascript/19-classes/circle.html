@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" id="rectangle">create rectangle</button>
+    <button id="circle">create circle</button>
+   
+    
+    
+    <div id="mainDiv" style="position: relative"></div>
+    <p>H: <input type="text" id="height"></p>
+    <p>W: <input type="text" id="width"></p>
+    <p>C: <input type="text" id="color"></p>
+    <p>R: <input type="text" id="radius"></p>
+    <script>
+
+        class Rectangle {
+            constructor(height, width, color) {
+                this.height = height;
+                this.width = width;
+                this.color = color;
+                this.newDiv = document.createElement("div");
+
+
+            }
+
+            create() {
+
+                let mainDiv = document.getElementById("mainDiv");
+                mainDiv.appendChild(this.newDiv);
+                this.newDiv.style.height = this.height;
+                this.newDiv.style.width = this.width;
+                this.newDiv.style.border="1px solid";
+                this.newDiv.style.background=gra();
+                this.newDiv.style.borderColor = this.color;                
+                this.newDiv.style.position="absolute";
+                this.newDiv.style.top=Math.floor(Math.random() * 400)+ "px";
+                this.newDiv.style.left=Math.floor(Math.random() * 700)+ "px";
+                
+
+
+            }
+        }
+
+        class Circle extends Rectangle {
+            constructor(height, width, color, radius) {
+                super(height, width, color);
+                this.radius = radius;
+
+            }
+
+            createCircle() {
+                this.create();
+                this.newDiv.style.borderRadius = this.radius;
+
+            }
+        }
+
+
+
+        const circleBtn = document.getElementById("circle");
+        circleBtn.addEventListener("click", function () {
+            let height = document.getElementById("height").value;
+            let width = document.getElementById("width").value;
+            let color = document.getElementById("color").value;
+            let radius = document.getElementById("radius").value;
+            let circle = new Circle(height, width, color, radius);
+            circle.createCircle();
+        })
+
+        const rectBtn = document.getElementById("rectangle");
+        rectBtn.addEventListener("click", function () {
+            let height = document.getElementById("height").value;
+            let width = document.getElementById("width").value;
+            let color = document.getElementById("color").value;
+            let rect = new Rectangle(height, width, color);
+            rect.create();
+        });
+
+
+
+        function getRandomColor() {
+    let letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+
+        color += letters[Math.floor(Math.random() * 16)];
+
+    }   
+
+    return color;
+
+}
+
+function gra(){
+    firstColor = getRandomColor();
+    secondColor = getRandomColor();
+     thirdColot= getRandomColor();
+     forthColor= getRandomColor();
+     graColor =  "linear-gradient(270deg,"+ firstColor+','+ secondColor+")";     
+     return graColor;
+     
+}
+
+    </script>
+</body>
+
+</html>

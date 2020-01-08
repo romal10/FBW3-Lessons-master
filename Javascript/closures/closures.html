@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Closures</title>
+</head>
+
+<body>
+    <script>
+        // normal function
+        /*
+        function incr(n) {
+            return n += 1;
+        }
+
+        var res = incr(3); // returns 4
+        console.log(res);
+        */
+
+        // function that returns a function
+        /*
+        function makeCounter(n) {
+        
+        function incr() {
+            return n += 1;
+        } 
+        
+        return incr()
+        }
+
+        var res = makeCounter(3); // returns 4
+        console.log(res);
+        */
+
+        // function scope
+        /*
+        function makeCounter(n) {
+        var n = 10;
+        function incr() {
+            return n += 1;
+        } 
+        
+        return incr()
+        }
+
+        var res = makeCounter(3); // it's always 11 (!)
+        console.log(res);
+        */
+
+        //global scope
+        /*
+        var n = 20;
+
+        function makeCounter(n) {
+        var n = 10;
+        function incr() {
+            return n += 1;
+        } 
+        
+        return incr()
+        }
+
+        var res = makeCounter(3); // still 11, but if comment it will be 21 (!)
+        console.log(res);
+        */
+
+        // CLOSURE
+        /*
+        function makeCounter() {
+        var currentValue = 1;
+        return function() {
+            return currentValue++;
+            }
+        }
+
+        var counter = makeCounter();
+        console.log(counter()); // 1
+        console.log(counter()); // 2
+        */
+
+        /*
+        var counter1 = makeCounter();
+        var counter2 = makeCounter();
+        console.log(counter1()); // 1
+        console.log(counter1()); // 2
+
+        console.log(counter2()); // 1
+        */
+
+        //change initial state
+        /*
+        function makeCounter() {
+            function counter() {
+                return counter.currentValue++;
+            }
+            counter.currentValue = 1;
+            return counter;
+        }
+
+        var counter = makeCounter();
+        counter.currentValue = 5;
+        console.log(counter()); //5
+        console.log(counter()); //6
+        */
+
+        // Outside Inside
+        /*
+        function outside(x) {
+            function inside(y) {
+                return x + y;
+            } 
+        };
+        outside(x)(y)
+        */
+
+
+    </script>
+</body>
+
+</html>

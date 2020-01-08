@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validate your age</title>
+</head>
+<body>
+    <p>Input your age: <input type="text" id="age"></p>
+    <button type="button" onclick="validate()">Validate</button>
+
+    <p>Number N: <input type="text" id="n-number"></p>
+    <p>Number M: <input type="text" id="m-number"></p>
+    <button type="button" onclick="divide()">Divide</button>
+
+    <script>
+        function divide() {
+            try {
+                //divide
+                let n = document.getElementById("n-number").value;
+                let m = document.getElementById("m-number").value;
+                if(m == 0) throw "Cannot divide by 0"
+                if(isNaN(n/m)) throw "Probably data contains a string"
+                alert(n/m);
+            }catch(e) {
+                alert(e);
+            }
+        }
+
+
+
+        function validate() {
+            try {
+                let age = document.getElementById("age").value;
+                console.log("Your age is: " + age);
+
+                if (age < 18) throw "Your age is below 18";
+
+                alert("You are allowed to watch out content")
+            } catch(e) {
+                alert(e);
+            }
+        }
+    </script>
+    
+</body>
+</html>

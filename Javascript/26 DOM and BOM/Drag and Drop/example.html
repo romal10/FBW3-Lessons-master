@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body{
+            background:ghostwhite;
+        }
+        .dragdrop {
+            width: 180px;
+            height: 180px;
+            float: left;
+            margin: 10px;
+            padding: 5px;
+            border: 5px solid magenta;
+        }
+        .hovering{
+            
+            border-style: dashed;
+            background-color: bisque;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+        
+        
+
+        <div class="dragdrop" ondragleave="dragLeave(event)" ondragenter="dragEnter(event)" ondrop="drop(event)" ondragover="dragOver(event)">
+            <img  ondragstart="start(event)" id="dragImg"   src="https://source.unsplash.com/random/180x180" alt=""
+            draggable="true" />
+    </div>
+
+    <div class="dragdrop" ondragleave="dragLeave(event)"
+     ondragenter="dragEnter(event)" ondrop="drop(event)"
+      ondragover="dragOver(event)"></div>
+
+    <div class="dragdrop" ondragleave="dragLeave(event)" ondragenter="dragEnter(event)" ondrop="drop(event)" ondragover="dragOver(event)"></div>
+
+    <div class="dragdrop" ondragleave="dragLeave(event)" ondragenter="dragEnter(event)" ondrop="drop(event)" ondragover="dragOver(event)"></div>
+
+    <div class="dragdrop" ondragleave="dragLeave(event)" ondragenter="dragEnter(event)" ondrop="drop(event)" ondragover="dragOver(event)"></div>
+
+
+    <script src="example.js"></script>
+</body>
+
+</html>

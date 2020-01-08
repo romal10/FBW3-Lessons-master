@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+  color:blue;
+  background:lightsalmon;
+}
+
+body{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: lightcyan;
+}
+.person{
+  width:200px;
+  padding:20px;
+  box-shadow:0 3px 3px #ccc;
+  border:1px solid #aaa;
+  background:rgb(231, 145, 15);
+  display:inline-block;
+  color:white;
+  margin:10px;
+}
+#todo{
+  border:2px solid rgba(51, 46, 46,0.6);
+  border-radius: 20px;
+  box-shadow: 0 7px 7px 2px #bbb;
+   margin: 25px;
+   width:300px;
+   background: lightsteelblue;
+}
+#todo ul{
+  list-style-type: none;
+  width:250px;
+  
+  
+
+}
+#todo ul li{
+  color: darkblue;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+
+}

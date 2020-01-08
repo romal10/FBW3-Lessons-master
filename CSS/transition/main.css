@@ -1,0 +1,44 @@
+.div1{
+width:100px;
+height:100px;
+background-color: green;
+/* transition: background 3s,width 6s,border 3s,border-radius 2s; */
+transition: all 2s;
+transition-timing-function: linear;
+transition-timing-function: ease-out;
+transition-timing-function: ease-in-out;
+transition-timing-function: cubic-bezier(.3,1.13,.84,.15);
+/* transform: translate(200px,200px) rotate(360deg) ;  */ 
+/* transition-delay: 1s; */
+/* transition: width 2s,height 2s; */
+}
+.div1:hover{
+ background: red;
+ border:3px solid black; 
+ width:500px;
+ height: 500px;
+ border-radius:45px;
+ opacity: 0.4;
+}
+.div2{
+    width:150px;
+    height:150px;
+    margin-top:50px;
+    background-color:yellow;
+    animation-name:newanimation,myanimation;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    /* animation-timing-function: cubic-bezier(.4,1.11,.27,.04); */
+     animation-direction: alternate-reverse;   
+}
+@keyframes myanimation {
+    from{ background: url('200.jpeg') no-repeat; }
+    to{background: red; background: url('600.jpeg') no-repeat;}
+}
+@keyframes newanimation{
+    from{width:150px;}
+    to{width:400px;height:400px;transform:translate(100px,100px)
+         rotateY(180deg) rotateX(180deg); opacity: 0.9;
+        
+        }
+}

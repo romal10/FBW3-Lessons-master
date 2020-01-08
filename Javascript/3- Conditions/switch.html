@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Switch</title>
+</head>
+
+<body>
+    <script>
+        let day = prompt("Please set the day...");
+        if (parseInt(day) < 7) {
+            switch (day) {
+                default:
+                    alert("Just a normal day");
+                    break;
+                case "6":
+                case "0":
+                    alert("Weekend!!!");
+            }
+        }
+        else {
+            alert("Out of the range")
+        }
+
+    </script>
+</body>
+
+</html>

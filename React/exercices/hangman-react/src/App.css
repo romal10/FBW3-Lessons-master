@@ -1,0 +1,79 @@
+
+/*custom css*/
+
+body{
+  background-color: black !important;
+
+}
+
+.Hangman img {
+	width: 200px;
+	height: 350px;
+}
+
+.Hangman h1 {
+	font-size: 3rem;
+	font-weight: 400;
+	padding-top: 0;
+	color: #158cee;
+}
+
+.Hangman-word {
+	letter-spacing: 1em;
+	margin: 0.4em -1em 0.2em 0;
+	font-size: 1.5rem;
+	color: #07ffc9;
+}
+
+.Hangman-btns {
+	text-align: center;
+	color: #158cee;
+	display: inline-block;
+	font-size: 1.5rem;
+}
+.letter-red, .letter-green {
+	border: none;
+	font-family: inherit;
+	font-size: 2.5rem;
+	cursor: pointer;
+	width: 5rem;
+	margin: 18px 8px 10px 13px;
+	letter-spacing: 0px;
+	outline: none;
+	background: #07ffc9;
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	padding-top: 15px;
+}
+
+.Hangman-reset {
+	color: #d6dfdf;
+	box-shadow: 0 6px #07ffc9 !important;
+	width: 10rem !important;
+	background-color: #07ffc9;
+	border-color: #07ffc9;
+  box-shadow: 0 0 40px #07ffc9;
+  height: 30px;
+}
+
+.letter-red:hover {
+	background-color: #fffffa;
+}
+
+.letter-red:disabled {
+	color: #d6dfdf;
+	background-color: #ff1100;
+	border-color: #ff1100;
+	box-shadow: 0 0 40px #ff1100;
+}
+
+.letter-green:hover {
+	background-color: #fffffa;
+}
+
+.letter-green:disabled {
+	color: #d6dfdf;
+	background-color: #11FF00;
+	border-color: #11FF00;
+	box-shadow: 0 0 40px #11FF00;
+}

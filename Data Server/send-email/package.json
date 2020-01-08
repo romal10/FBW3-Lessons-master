@@ -1,0 +1,18 @@
+{
+  "name": "send-email",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "live": "nodemon app"
+  },
+  "keywords": [],
+  "author": "Mansoue Tumeh",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "nodemailer": "^6.4.2"
+  }
+}

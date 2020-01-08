@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+     .box{
+         width:250px;
+         height: 250px;
+         background: lightblue;
+         float: left;
+         margin:10px;
+         text-align:center;
+         display: flex;
+         align-items: center;
+     }    
+        
+    </style>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+            <div class="box">
+                    #ccffaa
+             </div>
+    </div>
+    
+    <script>
+           for(let i = 0 ; i<4 ;i++){
+            let div = document.createElement("div");
+            div.textContent = "#ccddff";
+            div.className = "box";
+            div.style.background = random();
+            
+            let main = document.getElementById("main");
+            main.appendChild(div);
+        }
+            </script>
+</body>
+</html>

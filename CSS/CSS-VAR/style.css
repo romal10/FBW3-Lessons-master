@@ -1,0 +1,83 @@
+:root{
+    --div-height:500px;
+    --txtcolor:blue;
+    --bgcolor:linear-gradient(to  left,lightblue,lightgreen);
+    
+
+}
+body{
+   
+background-image: var(--bgcolor);    
+
+}
+.main h1{
+    color:var(--txtcolor);
+    
+    
+}
+.main{
+    
+    --div-height:100px;
+    /* the height here is 100px */
+    background-color: #ccc;
+    height:var(--div-height);
+    
+}
+.mydiv{
+    /* the height here is 500px */
+    margin-top:50px;
+    height: var(--div-height);
+    background-color: aqua;
+    font-size:2.5em;
+}
+.new{
+    padding: 100px;
+    --txtcolor:white;    
+    border-radius:25px;
+}
+#alert{
+    --txtcolor:red;
+    border:2px solid black;
+    font-size:1.6em;    
+}
+#ok{
+    --txtcolor:green;
+    
+    border:2px solid black;
+    margin-top:50px;
+    font-size:1.6em;
+}
+*{
+    color:var(--txtcolor);
+}
+.btn{
+    text-decoration:none;
+    background:transparent;
+    border:2px solid black;
+    padding:10px 15px;
+    border-radius:25px;
+    margin:10px;
+}
+.btn:hover{
+    background-color:var(--color,black);
+    
+}
+.btn.red{
+    --color:pink;
+}
+.btn.blue{
+    --color:lightblue;
+}
+.btn.green{
+    --color:lightgreen;
+}
+.red{
+    background:red;
+    
+}
+.blue{
+    background:blue;
+}
+.green{
+    background: green;
+}

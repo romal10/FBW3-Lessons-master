@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Math</title>
+</head>
+<body>
+
+        <p>Value in Degrees<input id="input"/></p>
+        <button onclick="ConvertDegToRadians()">Convert</button>
+        <p id="output"></p>
+
+    <script>
+        function ConvertDegToRadians() {
+            //
+            let input = document.getElementById("input").value;
+            console.log(input);
+            let output;
+            output = input*Math.PI/180;
+            document.getElementById("output").innerHTML = output;
+        }
+        //function ConvertDegToRadians(number) -> number*PI/180
+        // 
+
+    </script>
+    
+</body>
+</html>
