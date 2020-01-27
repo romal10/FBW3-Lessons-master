@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const JWtStrategy = require ('passport-jwt').Strategy;
 const passport = require('passport')
+const jwt = require ('jsonwebtoken')
 
 // Load User Model
 const User = require('../models/User');
@@ -51,7 +52,7 @@ module.exports = (passport)=>{
         });
       });
       const optionsJWT = {
-          jwtFromRequest: req => require.cookies.jwt,
+          jwtFromRequest: req => req.cookies.jwt,
           secretOrKey: process.env.JWT_SECRET
 
       }
