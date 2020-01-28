@@ -4,6 +4,7 @@ const bcrypt = require('bcryptjs');
 const JWtStrategy = require ('passport-jwt').Strategy;
 const passport = require('passport')
 const jwt = require ('jsonwebtoken')
+const facebookStrategy = require ('passport.facebook').Strategy;
 
 // Load User Model
 const User = require('../models/User');
@@ -77,6 +78,29 @@ module.exports = (passport)=>{
       })
       )
 
+      const optionsFacebook = {
+          clientID:'172662087354270',
+          clientSecret: '28589f9cbc13f8af6f6c36b6ae73f203',
+          callbackUrl: "http://localhost:5007/users/auth/facebook/callback",
+          profileFields: ['id','displayName','email']
+      }
+
+      passport.use('facebook',
+      new facebookStrategy(optionsFacebook,(accessToken,refreshToken,profile, done)=>{
+          profileUser.findOne({email : profile._json.email})
+          .then(userData=>{
+              if(!userData){
+                  return done (null, false,{message: 'this is email is not registered!'})
+              }else{
+                  return done (null, userData)
+              }
+
+          })
+          .catch(err => {
+              done(err)
+          })
+      }) 
+      )
 }
 
 
