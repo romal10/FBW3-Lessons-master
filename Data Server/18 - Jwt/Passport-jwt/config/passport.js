@@ -5,6 +5,34 @@ const JWtStrategy = require ('passport-jwt').Strategy;
 const passport = require('passport')
 const jwt = require ('jsonwebtoken')
 const facebookStrategy = require ('passport-facebook').Strategy;
+const nodemailer = require ('nodemailer');
+
+
+//this is nodemailer module codes, we can get this code from nodemailer webpage
+let transporter = nodemailer.createTransport({
+    host: "smtp.googlemail.com",
+    port: 465,
+    secure: true,
+    auth: {
+      user:'ad.sulemann@gmail.com',
+      pass: '',
+       // if we send the contact from from the local host so we will be rejected, that's why we need to juse the tls .
+    },
+    tls:{
+          rejectUnauthorized:false
+    }
+  });
+
+// setup email data with unicode symbols
+let mailOptions = {
+    from: '"Stargid Customers " <support@stargid.com>', // sender address
+    to: 'mohey.romal@gmail.com', // list of receivers
+    subject: ' Welcome to our Website  ', // Subject line
+    text: 'Welcome', // plain text body
+    html: output // html body
+};
+
+
 
 // Load User Model
 const User = require('../models/User');
@@ -23,7 +51,7 @@ module.exports = (passport)=>{
                     if(err) throw err;
 
                     if(isMatch){
-                        return done(null,userData)
+                        sendRegisterEmail(userData.email)
 
                     }
                     else {
