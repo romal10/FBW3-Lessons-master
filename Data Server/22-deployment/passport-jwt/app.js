@@ -7,7 +7,8 @@ const dotenv = require('dotenv');
 const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
-const cookieParser = require('cookie-parser')
+const cookieParser = require('cookie-parser');
+const path = require('path');
 
 
 
@@ -20,6 +21,7 @@ require('./config/passport')(passport)
 // connect to MongoDB database
 connectDB(env.db);
 // EJS 
+app.set("views", path.join(__dirname, "views"));
 app.use(expressLayouts);
 app.set('view engine' , 'ejs' )
 

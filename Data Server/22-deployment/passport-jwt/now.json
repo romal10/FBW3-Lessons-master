@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "name": "passport-jwt",
+    "builds": [{
+        "src": "app.js",
+        "use": "@now/node"
+        }],
+    "routes": [{
+        "src": "/(.*)",
+        "dest": "app.js"
+    }],
+    "env": {
+        "NODE_ENV": "production",
+        "PORT": "3000",
+        "JWT_SECRET": "@jwt_secret",
+        "MONGO_URI": "@mongo_uri",
+        "MY_EMAIL": "@my_email",
+        "MY_PASS": "@my_pass"
+      }
+}
